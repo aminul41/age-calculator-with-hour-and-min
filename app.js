@@ -14,11 +14,12 @@ const getDifferenceFromNow = (fromDate) => {
   difference -= minuteDifference * 60;
 
   let message;
+
   if (weekDifference > 0) {
     message = `${weekDifference} week`;
   }
   if (hourDifference > 0) {
-    message = `${hourDifference} hour`;
+    message = `${message} ${hourDifference} hour`;
   }
 
   if (minuteDifference > 0) {
